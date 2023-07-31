@@ -1,0 +1,42 @@
+<html>
+<head>
+
+<body>
+
+<script>
+window.onload=function()
+{
+getMarks();
+}
+function getMark()
+{
+for(var i=0;i<5;i++)
+{
+//parse to integer
+var a=parseInt(prompt("Enter marks:"));
+var total=parseInt(total+a);
+}
+document.write("Total:",total);
+document.write("AVG:",(total/5));
+
+//creating button
+var button= document.createElemenet("button");
+button.innerHTML="Grade";
+button.onclick=function()
+{
+if(AVG>30)
+{
+alert("Congratulations");
+}
+else
+{
+alert("Better luck next time");
+}
+};
+//adding button
+document.body.appendChild(button); 
+
+</script>
+</body>
+
+</html>
